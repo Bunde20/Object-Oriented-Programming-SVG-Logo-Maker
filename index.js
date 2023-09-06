@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
+const filesystem = require('')
 
-
+//List of questions to ask the user
 const questions = [
     {
         type: "input",
@@ -24,3 +25,4 @@ const questions = [
         message: "Enter a standard or hexidecimal color for your shape."
     }
 ];
+
