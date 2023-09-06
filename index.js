@@ -48,7 +48,12 @@ const init = () => {
     svgToCreate.setShape(svgShape)
     svgToCreate.setText(data.text, data.textColor)
     return writeFile(`./examples/${data.shape}.svg`, svgToCreate.render())
-  });
+  }).then(() => {
+    console.log("Your SVG has been created, it is in the example folder")
+  }).catch((err) => {
+    console.log("Something went wrong!")
+    console.log(err)
+  })
 };
 
 init();
