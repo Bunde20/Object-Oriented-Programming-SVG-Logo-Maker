@@ -12,10 +12,9 @@
     - This was done by setting the dimensions for the image to 300x200 pixels for the user to save.
 
 
-## Usage:![SVG Logo Maker](https://github.com/Bunde20/Object-Oriented-Programming-SVG-Logo-Maker/assets/135177057/532cfefc-99ae-4395-aa2c-cc52f397e6c6)
+## Usage: https://github.com/Bunde20/Object-Oriented-Programming-SVG-Logo-Maker/assets/135177057/8bcb5d38-0fc1-4b6c-bad4-54b4abb3b915
 
+- Follow this link to view a longer video showing the application functionality: [Untitled_ Sep 8, 2023 7_42 PM.webm](https://github.com/Bunde20/Object-Oriented-Programming-SVG-Logo-Maker/assets/135177057/147bc3c6-3554-4305-a1de-18bfd1d677cb)
 
-
-## Deployed Application Link:
 
 
