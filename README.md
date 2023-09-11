@@ -6,7 +6,7 @@
 Design an application using node.js to create logos based on user input.
 
 ## Acceptance Criteria
-- Using the command line, when the user enters npm start, the user is prompted for information.
+- After installing the dependencies, when the user enters "npm start" in the terminal the user is prompted for information.
     - After the npm start command is given, the user is prompted to enter 1-3 letters, color for the text, a shape, and a color for the shape.
 - After the user has answered all the questions an .svg file is updated in the examples folder with the most recent input.
     - When all of the prompts are answered by the user the file with the associated shape will be dynamically updated in the examples folder. (Example: Circle.svg)
