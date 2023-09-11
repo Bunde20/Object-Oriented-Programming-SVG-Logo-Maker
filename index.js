@@ -1,3 +1,4 @@
+// List of dependencies and paths used
 const inquirer = require("inquirer");
 const { writeFile } = require("fs/promises");
 const { Circle, Triangle, Square } = require("./lib/shapes");
@@ -31,6 +32,7 @@ const questions = [
   },
 ];
 
+// Creates shape prompt using inquirer
 const init = () => {
   inquirer.prompt(questions).then((data) => {
     let svgShape;
@@ -42,15 +44,16 @@ const init = () => {
     } else if (shapeWanted === "Square") {
       svgShape = new Square();
     }
-    svgShape.setColor(data.shapeColor)
+    svgShape.setColor(data.shapeColor) // Sets color of shape
 
+    // Creates new SVG after input is entered and writes to file with answers
     const svgToCreate = new SVG()
     svgToCreate.setShape(svgShape)
     svgToCreate.setText(data.text, data.textColor)
     return writeFile(`./examples/${data.shape}.svg`, svgToCreate.render())
-  }).then(() => {
+  }).then(() => { // Logs success
     console.log("Your SVG has been created, it is in the examples folder.")
-  }).catch((err) => {
+  }).catch((err) => { // Logs error
     console.log("Something went wrong!")
     console.log(err)
   })
